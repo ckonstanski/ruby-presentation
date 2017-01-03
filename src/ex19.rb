@@ -1,9 +1,7 @@
 # ex19.rb
 
 def transform(arg)
-    list = []
-    arg.each { |x| list.push(yield x) }
-    list
+    arg.map { |x| yield x }
 end
 
 p transform [1, 2, 3] { |x| x * x }

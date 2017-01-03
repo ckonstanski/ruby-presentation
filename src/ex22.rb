@@ -2,9 +2,7 @@
 
 class Array
     def transform
-        list = []
-        self.each { |x| list.push(yield x) }
-        list
+        self.map { |x| yield x }
     end
 end
 
