@@ -317,6 +317,29 @@
 \end{frame}
 
 \begin{frame}
+  \frametitle{Ruby Syntax: Splat}
+
+  Ruby has an array structuring/destructuring operator: the splat. It
+  is most often used to group or degroup function arguments.
+
+  Example of function argument structuring:
+
+  \includegraphics[scale=0.53]{src_20}
+
+  \includegraphics[scale=0.5]{out_20}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Ruby Syntax: Splat}
+
+  Example of function argument destructuring:
+
+  \includegraphics[scale=0.53]{src_21}
+
+  \includegraphics[scale=0.5]{out_21}
+\end{frame}
+
+\begin{frame}
   \frametitle{Including Files}
 
   Ruby supports file includes. To include a file that is in the
@@ -475,21 +498,33 @@
 \begin{frame}
   \frametitle{Closures}
 
+  A very simple example of a closure:
+
+  \includegraphics[scale=0.53]{src_19}
+
+  \includegraphics[scale=0.5]{out_19}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Closures}
+
+  the same thing implemented as a metaprogrammed new method on the
+  Array class:
+
+  \includegraphics[scale=0.53]{src_22}
+
+  \includegraphics[scale=0.5]{out_22}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Closures}
+
   Chef is an enterprise configuration management platform. It is
   implemented entirely in ruby. The configuration you write is also
   ruby. It is a DSL (Domain Specific Language) that is full of
   closures. Here is a short example of a chef recipe file:
 
   \includegraphics[scale=0.53]{src_18}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Closures}
-
-  Another example from a competing configuration management system,
-  Puppet:
-
-  \includegraphics[scale=0.53]{src_19}
 \end{frame}
 
 \end{document}
