@@ -527,4 +527,26 @@
   \includegraphics[scale=0.53]{src_18}
 \end{frame}
 
+\begin{frame}
+  \frametitle{Multithreading}
+
+  Ruby has a simple but effective threading API. See the docs for the
+  full feature set. Here we will look at a simple example that
+  includes a mutex.
+
+  An interesting thing happened when I ran the example. When ran
+  repeatedly, sometimes the second thread actually started first, or
+  at least it gained the lock first. This shows that you cannot depend
+  on threads running in any sort of order. They are truly
+  asynchronous.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Multithreading}
+
+  \includegraphics[scale=0.53]{src_23}
+
+  \includegraphics[scale=0.5]{out_23}
+\end{frame}
+
 \end{document}
