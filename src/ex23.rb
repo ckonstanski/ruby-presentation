@@ -18,7 +18,7 @@ t1 = Thread.new {
 }
 t2 = Thread.new {
     $mutex.synchronize {
-        do_thread("thread 2")
+        do_thread("Thread 2")
     }
 }
 puts "After the threads are spun up but while they are still sleeping..."
